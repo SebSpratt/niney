@@ -7,9 +7,9 @@ import { SportsModule } from '../sports/sports.module';
 import { LeaguesModule } from '../leagues/leagues.module';
 import { CountriesModule } from '../countries/countries.module';
 
-const routes: Route[] = [
-  { path: '', component: HomeComponent}
-]
+// const routes: Route[] = [
+//   { path: '', component: HomeComponent}
+// ]
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ const routes: Route[] = [
     CountriesModule,
     LeaguesModule,
     SportsModule,
-    RouterModule.forChild(routes)
+    // RouterModule.forChild(routes)
   ]
 })
 export class HomeModule { }
