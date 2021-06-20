@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
-import { Sport } from '../state/sports.model';
+import { Sport } from '../../state/sports.model';
 
 @Component({
   selector: 'app-sports-table',

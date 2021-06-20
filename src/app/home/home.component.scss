@@ -1,4 +1,20 @@
 :host {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: grey;
+}
+
+.card {
+    min-width: 300px;
+    height: calc(100vh - 20px);
+    overflow: auto;
+    margin: 10px;
+    flex: 1;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* Chrome/Safari/Webkit */
+    }
 }

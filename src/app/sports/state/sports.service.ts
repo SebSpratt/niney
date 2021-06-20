@@ -9,9 +9,6 @@ export class SportsService {
     public loadSports() {
         this.http.get<any>("https://www.thesportsdb.com/api/v1/json/1/all_sports.php").subscribe(
             entities => {
-                console.log(entities)
-                console.log('------');
-                console.log(entities.sports);
                 this.sportsStore.update({ sports: entities.sports });
             }
         );

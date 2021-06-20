@@ -1,0 +1,12 @@
+<div *ngIf="dataLoaded">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z0 country-table">
+        <ng-container matColumnDef="Sport">
+            <th id="Sport" mat-header-cell *matHeaderCellDef>Name</th>
+            <td mat-cell mat-cell-peak *matCellDef="let element">{{element?.name_en}}</td>    
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+</div>

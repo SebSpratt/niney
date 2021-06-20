@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Sport } from '../state/sports.model';
-import { SportsQuery } from '../state/sports.query';
-import { SportsService } from '../state/sports.service';
+import { Sport } from '../../state/sports.model';
+import { SportsQuery } from '../../state/sports.query';
+import { SportsService } from '../../state/sports.service';
 
 @Component({
   selector: 'app-sports-card',
