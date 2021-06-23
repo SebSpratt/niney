@@ -15,7 +15,7 @@
     <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
       <div class="example-element-detail"
            [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
-        <img style="float:left" src={{element.strSportThumb}} />
+        <img class="image" src={{element.strSportThumb}} alt="{{element.strSport}} stock image"/>
         <div class="example-element-description">
           {{element.strSportDescription}}
         </div>

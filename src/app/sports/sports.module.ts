@@ -6,13 +6,15 @@ import { SportsTableComponent } from './dumb/sports-table/sports-table.component
 import { MaterialModule } from '../shared/material.module';
 import { SportsOverviewComponent } from './smart/sports-overview/sports-overview.component';
 import { SportsAccordionComponent } from './dumb/sports-accordion/sports-accordion.component';
+import { SpacesPipe } from './pipes/spaces.pipe';
 
 @NgModule({
   declarations: [
     SportsCardComponent,
     SportsTableComponent,
     SportsOverviewComponent,
-    SportsAccordionComponent
+    SportsAccordionComponent,
+    SpacesPipe,
   ],
   exports: [
     SportsCardComponent

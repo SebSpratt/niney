@@ -1,2 +1,11 @@
-<a [routerLink]="['/home']" style="height: 10%;"><button>Back</button></a>
-<app-sports-accordion [sports]="sports"></app-sports-accordion>
+<a [routerLink]="['/home']" class="button"><button mat-raised-button class="back-button">Back</button></a>
+<mat-form-field style="display: block; max-width: 30em;">
+    <mat-label>Search</mat-label>
+    <input
+        (keyup)="searchChanged($event)"
+        formControlName="text"
+        matInput
+        autocomplete="off"
+    />
+</mat-form-field>
+<app-sports-accordion [sports]="filteredSports"></app-sports-accordion>

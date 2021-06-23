@@ -1,12 +1,12 @@
 <div *ngIf="dataLoaded">
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z0 league-table">
         <ng-container matColumnDef="Sport">
-            <th id="Sport" mat-header-cell *matHeaderCellDef>Name</th>
+            <th id="Sport" mat-header-cell *matHeaderCellDef>Sport</th>
             <td mat-cell mat-cell-peak *matCellDef="let element">{{element?.strSport}}</td>    
         </ng-container>
     
-        <ng-container matColumnDef="Format">
-            <th mat-header-cell *matHeaderCellDef>Format</th>
+        <ng-container matColumnDef="League">
+            <th mat-header-cell *matHeaderCellDef>League</th>
             <td mat-cell mat-cell-peak *matCellDef="let element">{{element?.strLeague}}</td>
         </ng-container>
     

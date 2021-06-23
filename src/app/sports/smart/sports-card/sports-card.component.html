@@ -1,4 +1,8 @@
-<mat-card>
-    <app-sports-table [sports]="sports" style="height: 90%"></app-sports-table>
-    <a [routerLink]="['/sports']" style="height: 10%;"><button>More</button></a>
+<mat-card class="sports-card">
+    <div class="sports-table">
+        <app-sports-table [sports]="sports"></app-sports-table>
+    </div>
+    <div class="button">
+        <a [routerLink]="['/sports']"><button mat-raised-button class="more-button">More</button></a>
+    </div>
 </mat-card>

@@ -17,7 +17,7 @@ export class LeaguesTableComponent implements OnInit {
   };
 
   public dataLoaded = false;
-  public displayedColumns = ['Sport', 'Format'];
+  public displayedColumns = ['Sport', 'League'];
   public dataSource: MatTableDataSource<League> = new MatTableDataSource();
 
   constructor() {}

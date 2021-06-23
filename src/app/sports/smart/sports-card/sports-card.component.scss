@@ -1,0 +1,24 @@
+@use 'partials/mixins';
+
+
+.sports-card {
+    height: calc(100% - 32px)
+}
+
+.sports-table {
+    height: calc(100% - 2em);
+    @include mixins.invisible-scrollbar;
+}
+
+.button {
+    height: 2em;
+    float: right
+}
+
+.more-button {
+    background-color: lightgrey;
+}
+
+.more-button:hover {
+    background-color: silver;
+}
