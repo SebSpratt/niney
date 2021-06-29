@@ -9,3 +9,18 @@
 .back-button:hover {
     background-color: silver;
 }
+
+.search-bar {
+    display: block;
+    max-width: 30em;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: black !important;
+}
+  
+::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: black !important;;
+}

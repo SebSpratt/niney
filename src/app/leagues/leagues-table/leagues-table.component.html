@@ -1,17 +1,15 @@
-<div *ngIf="dataLoaded">
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z0 league-table">
-        <ng-container matColumnDef="Sport">
-            <th id="Sport" mat-header-cell *matHeaderCellDef>Sport</th>
-            <td mat-cell mat-cell-peak *matCellDef="let element">{{element?.strSport}}</td>    
-        </ng-container>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z0 league-table">
+    <ng-container matColumnDef="Sport">
+        <th id="Sport" mat-header-cell *matHeaderCellDef>Sport</th>
+        <td mat-cell mat-cell-peak *matCellDef="let element">{{element?.strSport}}</td>    
+    </ng-container>
     
-        <ng-container matColumnDef="League">
-            <th mat-header-cell *matHeaderCellDef>League</th>
-            <td mat-cell mat-cell-peak *matCellDef="let element">{{element?.strLeague}}</td>
-        </ng-container>
+    <ng-container matColumnDef="League">
+        <th mat-header-cell *matHeaderCellDef>League</th>
+        <td mat-cell mat-cell-peak *matCellDef="let element">{{element?.strLeague}}</td>
+    </ng-container>
     
-        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
     
-        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-    </table>
-</div>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
